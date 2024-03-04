@@ -24,7 +24,7 @@ void function GiftHarvesterInit(){
     file.focused = false
     file.pressed = false
 
-    file.waitSecs = GetConVarString("gift_harvester_time_span")
+    file.waitSecs = GetConVarFloat("gift_harvester_time_span") > 0 ? GetConVarFloat("gift_harvester_time_span") : 0.2
 
     // RegisterButtonsPressedCallback()
 
