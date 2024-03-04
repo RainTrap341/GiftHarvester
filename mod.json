@@ -1,0 +1,25 @@
+{
+	"Name": "GiftHarvester",
+	"Description": "HarvestYourGifts.",
+	"LoadPriority": 4,
+	"RequiredOnClient": false,
+	"Version": "0.0.2",
+
+	"Scripts": [
+		{
+			"Path": "gift_harvester.nut",
+			"RunOn": "CLIENT && MP",
+			"ClientCallback": {
+				"After": "GiftHarvesterInit"
+			}
+		}
+	],
+	"ConVars": [
+		{
+			"Name": "gift_harvester_time_span",
+			"DefaultValue": 0.2
+		}
+	]
+
+
+}
